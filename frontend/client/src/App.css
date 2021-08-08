@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.logtable{
+  text-align: center;
+}
+.table1{
+  background-color: rgb(201, 196, 196);
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.cloudimg{
+  background-image:url("Styles/Img/CloudImg1.jpg");
+  background-repeat: no-repeat;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  background-size: 1700px 800px;
+}
+th{
+  font-size: x-large;
+  font-weight: 700;
+}
+.p1{
+  margin: 50px;
+  font-size: x-large;
+  color: rgb(8, 8, 8);
+  background-color: rgb(155, 173, 173);
+  padding: 10px;
+}
+.welcome{
+  font-size: xxx-large;
+  font-weight: 800;
+  text-align: center;
+  color: rgb(223, 222, 213);
+
+  padding: 30px;
+}
+.button1{
+  margin: 50px;
+}
+.button2{
+  margin: 50px;
+}
+.lthead{
+  font-weight: 700;
+  font-size: x-large;
+  text-transform: uppercase;
+
+}
+.logcontents{
+  text-align: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

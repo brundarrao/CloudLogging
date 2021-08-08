@@ -1,0 +1,38 @@
+{
+  "name": "cloudloggingbe",
+  "version": "1.0.0",
+  "description": "CloudLoggingBE",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "jest -i --verbose --coverage --runInBand",
+    "start": "node index.js",
+    "dboff": "killall mongod",
+    "watch": "nodemon index.js",
+    "build": "cd frontend/client && npm run build",
+    "install-client": "cd frontend/client && npm install",
+    "heroku-postbuild": "cd frontend/client && npm install --only=dev && npm install && npm run build",
+    "server": "nodemon server.js",
+    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+    "startb": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+    "dbon": "mkdir -p ./db && mongod --dbpath ./db"
+  },
+  "engines": {
+    "node": "12.13.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.12.12",
+    "nodemailer": "^6.6.3",
+    "serve": "^12.0.0",
+    "superagent": "^6.1.0"
+  },
+  "proxy": "http://localhost:5000"
+}
